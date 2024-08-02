@@ -1,6 +1,6 @@
 const { init } = require('../index.js')
 
-const client = init(1694450)
+const client = init(480)
 client.input.init()
 
 const actionset = client.input.getActionSet('GameControls')
@@ -24,4 +24,4 @@ setInterval(() => {
         console.log('Cancel: ' + controller.isDigitalActionPressed(cancel))
         console.log('Control: ' + JSON.stringify(controller.getAnalogActionVector(control)))
     })
-}, 66)
+}, 500)

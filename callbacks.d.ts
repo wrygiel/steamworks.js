@@ -53,4 +53,10 @@ export interface CallbackReturns {
         order_id: number | bigint
         authorized: boolean
     }
+    [client.callback.SteamCallback.SteamInputDeviceConnected]: {
+        connected_device_handle: number
+    }
+    [client.callback.SteamCallback.SteamInputDeviceDisconnected]: {
+        disconnected_device_handle: number
+    }
 }
